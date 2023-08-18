@@ -21,9 +21,10 @@ import {
   deleteCategoryAction,
   fetchCategories,
 } from "../../redux/actions/categoryActions";
-import { request } from "../../server/request";
+// import { Request } from "../../server/Request";
 import { getImage } from "../../utils/getImage";
 import { PER_PAGE } from "../../constants";
+import { Request } from "../../server/request";
 
 const { useForm } = Form;
 const { TextArea } = Input;
@@ -83,8 +84,8 @@ const CategoriesP = () => {
       values.photo = photo._id;
 
       selected
-        ? await request.put(`category/${selected}`, values)
-        : await request.post("category", values);
+        ? await Request.put(`category/${selected}`, values)
+        : await Request.post("category", values);
       dispatch(fetchCategories());
       setIsModalOpen(false);
     } catch (err) {
@@ -107,7 +108,7 @@ const CategoriesP = () => {
     showModal();
     setSelected(id);
     try {
-      let { data } = await request.get(`category/${id}`);
+      let { data } = await Request.get(`category/${id}`);
       form.setFieldsValue(data);
       setPhoto(data.photo);
     } catch (err) {
@@ -130,7 +131,7 @@ const CategoriesP = () => {
     try {
       let formData = new FormData();
       formData.append("file", e.file.originFileObj);
-      let { data } = await request.post("upload", formData);
+      let { data } = await Request.post("upload", formData);
       setPhoto(data);
     } catch (err) {
       console.log(err);
