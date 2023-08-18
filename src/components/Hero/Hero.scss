@@ -1,0 +1,103 @@
+.hero{
+
+    background: radial-gradient(80.99% 71.93% at 74.58% 0.00%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.60) 100%);
+    .hero_content{
+        padding: 100px 80px;
+        background: radial-gradient(80.99% 71.93% at 74.58% 0.00%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.60) 100%);
+        background-image: url("/hero.svg");
+        background-repeat: no-repeat;
+        h2{
+            color: var(--light, #FFF);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; 
+letter-spacing: 3px;
+text-transform: uppercase;
+padding-bottom: 24px;
+text-align: start;
+span{
+    color: var(--light, #FFF);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 900;
+line-height: 20px;
+letter-spacing: 3px;
+text-transform: uppercase;
+}
+        }
+        h1{
+            width: 810px;
+            color: var(--light, #FFF);
+
+padding-bottom: 24px;
+font-family: Sen;
+font-size: 56px;
+font-style: normal;
+font-weight: 700;
+line-height: 64px; 
+letter-spacing: -2px;
+        }
+        :nth-child(3){
+            color: var(--light, #FFF);
+         
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+padding-bottom: 16px;
+span{
+    color: var(--yellow, #FFD050);
+
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+}
+        }
+        :nth-child(4){
+            width: 399px;
+            color: var(--light, #FFF);
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; 
+padding-bottom: 48px;
+        }
+        button{
+            margin-top: 40px;
+            padding: 15px 48px;
+            color: var(--black, #232536);
+font-family: Sen;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+background: var(--yellow, #FFD050);
+        }
+    }
+}
+
+@media (max-width:1024px){
+    .hero{
+        padding: 0;
+        margin: 0;
+        .hero_content{
+            background-image:none;
+            margin: 0;
+            padding: 0;
+            h1{
+                font-size: 30px;
+            }
+        }
+    }
+}
