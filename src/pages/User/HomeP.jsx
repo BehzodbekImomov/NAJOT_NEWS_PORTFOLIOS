@@ -8,6 +8,7 @@ import Category from "../../components/Category";
 import Hero from "../../components/Hero";
 import Loading from "../../components/Loading";
 import { request } from "../../server/Request";
+// import { request } from "../../server/Request";
 
 const HomeP = () => {
   const [category, setCategory] = useState([]);
@@ -16,7 +17,7 @@ const [loading,setLoading]=useState(false)
   const getData = useCallback(async () => {
     setLoading(true)
     try {
-      let { data } = await request("category");
+      let { data } = await request.get("category");
       setCategory(data.data);
     } catch (err) {
       toast.error(err.message);
