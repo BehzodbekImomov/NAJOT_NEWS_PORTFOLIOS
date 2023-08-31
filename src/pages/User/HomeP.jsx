@@ -7,7 +7,7 @@ import PopularBlog from "../../components/Blog";
 import Category from "../../components/Category";
 import Hero from "../../components/Hero";
 import Loading from "../../components/Loading";
-import { request } from "../../server/Request";
+import  request  from "../../server/Request";
 // import { request } from "../../server/Request";
 
 const HomeP = () => {
