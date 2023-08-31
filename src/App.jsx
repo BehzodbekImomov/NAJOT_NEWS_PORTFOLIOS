@@ -21,7 +21,8 @@ import AdminAccountP from "./pages/Admin/AdminAccountP";
 
 function App() {
   let { isAuthenticated ,role } = useContext(AuthContex);
-
+console.log(isAuthenticated);
+console.log(role);
   return (
     <BrowserRouter>
       <Routes>
