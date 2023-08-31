@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import Slider from "react-slick";
 import { toast } from "react-toastify";
-import { request } from "../../server/Request";
+import { request } from "../../server/request";
 import "./Blog.scss";
 
 const PopularBlog = () => {

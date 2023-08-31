@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useCallback, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import { toast } from "react-toastify";
-import { request } from "../../server/Request";
+import { request } from "../../server/request";
 import "./Hero.scss";
 
 const Hero = () => {

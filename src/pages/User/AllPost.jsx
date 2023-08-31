@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import Loading from "../../components/Loading";
 import { limit_all } from "../../constants";
-import { request } from "../../server/Request";
+import { request } from "../../server/request";
 import "./style.scss";
 
 const AllPost = () => {

@@ -1,7 +1,7 @@
 import { Col, Form, Input, message, Row, Tabs, Upload, Button } from "antd";
 import { Fragment, useCallback, useContext, useEffect, useState } from "react";
 import { LoadingOutlined, PlusOutlined } from "@ant-design/icons";
-import { request } from "../../server/Request";
+import { request } from "../../server/request";
 import { IMG_URL } from "../../constants";
 import Loading from "../Loading";
 import { setAuthCookies } from "../../utils/setAuthCookies";

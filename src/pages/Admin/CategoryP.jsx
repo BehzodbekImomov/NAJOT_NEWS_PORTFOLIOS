@@ -23,7 +23,7 @@ import {
 } from "../../redux/actions/categoryActions";
 import { getImage } from "../../utils/getImage";
 import { PER_PAGE } from "../../constants";
-import { request } from "../../server/Request";
+import { request } from "../../server/request";
 
 const { useForm } = Form;
 const { TextArea } = Input;

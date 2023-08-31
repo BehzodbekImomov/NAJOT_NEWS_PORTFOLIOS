@@ -1,5 +1,5 @@
 import { PER_PAGE } from "../../constants";
-import { request } from "../../server/Request";
+import { request } from "../../server/request";
 
 export const fetchCategories = (page = 1) => {
   return async (dispatch) => {

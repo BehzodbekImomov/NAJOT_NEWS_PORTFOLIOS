@@ -2,7 +2,7 @@ import { useCallback, useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
-import { request } from "../../server/Request";
+import { request } from "../../server/request";
 import "../../components/Blog/Blog.scss";
 import Loading from "../../components/Loading";
 

@@ -2,7 +2,7 @@ import { Fragment, useState } from "react";
 import Cookies from "js-cookie";
 
 import "../../components/Form/Form.scss";
-import { request } from "../../server/Request";
+import { request } from "../../server/request";
 import { EXPIRE_DATE, ROLE, TOKEN } from "../../constants";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";

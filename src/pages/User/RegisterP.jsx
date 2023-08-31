@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "../../components/Form/Form.scss";
 import Loading from "../../components/Loading";
-import { request } from "../../server/Request";
+import { request } from "../../server/request";
 
 const RegistrP = () => {
   const [user, setUser] = useState({
