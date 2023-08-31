@@ -52,10 +52,10 @@ const PopularBlog = () => {
       <div className="d-flex align-items-center pt-5 justify-content-between">
         <h2 className="p-0">Popular blogs</h2>
       </div>
-      <ul className="contentCard g-flex gap-5">
-        <Slider {...settings}>
+      <ul className="contentCard  gap-5">
+        <Slider  {...settings}>
           {blog.map((b) => (
-            <li key={b._id} className="card ">
+            <li key={b._id} className="card  ">
               <img className="img-fluid" src="/blog.svg" alt="" />
               <p className="title">
                 <span>{b.title}</span>
